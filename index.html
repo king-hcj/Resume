@@ -75,7 +75,21 @@
 						<li>
 							<ul class="address-text">
 								<li><b>邮&nbsp;&nbsp;箱&nbsp;： </b></li>
-								<li><a href="mailto:cheney_nuaa@foxmail.com"> cheney_nuaa@foxmail.com</a><!-- <a href="javascript:void(0);" onclick="window.clipboardData" title="复制邮箱">&nbsp;<img src="./images/copy.gif" alt="复制邮箱"></a> --></li>
+								<li><a href="mailto:cheney_nuaa@foxmail.com"> cheney_nuaa@foxmail.com</a><a href="javascript:void(0);" class="btn" data-clipboard-text="cheney_nuaa@foxmail.com" title="复制邮箱"><abbr title="点击复制邮箱！">&nbsp;<img height="30px" src="./images/copy.gif" alt="复制邮箱">&nbsp;</abbr></a>
+									<script src="./js/clipboard.min.js"></script>
+
+							    <script>
+							    var clipboard = new Clipboard('.btn');
+
+							    clipboard.on('success', function(e) {
+							        console.log(e);
+							    });
+
+							    clipboard.on('error', function(e) {
+							        console.log(e);
+							    });
+							    </script>
+						</li>
 							</ul>
 						</li>
 						<li>
